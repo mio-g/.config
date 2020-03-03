@@ -1,0 +1,72 @@
+
+
+
+alias h='history '
+
+# Default to human readable figures
+ alias df='df -h'
+ alias du='du -h'
+
+
+
+
+# Aliases [Ori, see my aliases further below]
+# #######
+
+# Some example alias instructions
+# If these are enabled they will be used instead of any instructions
+# they may mask.  For example, alias rm='rm -i' will mask the rm
+# application.  To override the alias instruction use a \ before, ie
+# \rm will call the real rm not the alias.
+
+# Interactive operation...
+# alias rm='rm -i'
+alias cp='cp -p'
+# alias mv='mv -i'
+
+
+# Misc :)
+alias less='less -r'                  # pass through raw control characters [color]
+# alias whence='type -a'                # where, of a sort
+alias grep='grep --color=tty'        # show differences in colour
+
+
+alias j='jobs '
+alias dv="dirs -v"
+alias pu="pushd "
+alias po="popd "
+
+alias mydate='date "+%F %H:%M"'
+
+
+# Mios stuff:
+
+alias cdev='cd ~/dev; ll'
+alias cdgo='cd ~/go/src; ll'
+# Moved to a function in git_helpers.sh 
+#source ~/git_helpers.sh
+alias tree='tree -a'
+alias tree2='tree -L 2'
+alias tree3='tree -L 3'
+alias chuck_pony='chuck | ponysay'
+alias pony='fortune |ponysay'
+alias libchef='chef exec librarian-chef'
+
+#alias gpg='gpg2'
+
+#alias ls='LC_COLLATE=C ls -v --color=auto --group-directories-first'
+
+# mutt mail by account
+alias muttpr='mutt -F ~/.mutt/muttrc.pri'
+alias mutttk='mutt -F ~/.mutt/muttrc.tkl'
+
+#Multi account goobook:
+alias goobookpr='goobook -c ~/.goobookrc_pr'
+
+alias tor='cd ~/bin/tor-browser_en-US/ ; ./start-tor-browser.desktop'
+alias trello='~/bin/trello &'
+alias camera_on='source ~/.camera.sh'
+alias wttr='curl http://wttr.in/megido'
+alias light='sudo ./.light.sh'
+alias sdd='shutdown -h now'
+alias lo='i3lock -c 500050'
