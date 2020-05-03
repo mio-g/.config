@@ -199,6 +199,9 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'vimwiki/vimwiki'
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
+:map <Leader>tt <Plug>VimwikiToggleListItem`
+:nmap <Leader>we <Plug>VimwikiSplitLink`
+:nmap <Leader>wq <Plug>VimwikiVSplitLink`
 
 " Indent lines
 Plug 'Yggdroot/indentLine'

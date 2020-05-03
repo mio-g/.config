@@ -55,8 +55,9 @@ plugins=(git battery jsontools mvn common-aliases git-extras git-prompt history 
 # User configuration
 
 export GOPATH=$HOME/go
-export GOROOT=/usr/lib/go
-export PATH=$HOME/bin:/usr/local/bin:$GOPATH/bin:$GOROOT:$PATH
+# export GOROOT=/usr/lib/go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$HOME/bin:/usr/local/bin:$GOPATH/bin:$GOROOT/bin:$PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
